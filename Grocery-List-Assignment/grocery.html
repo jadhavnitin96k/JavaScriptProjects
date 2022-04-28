@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Nitin Jadhav">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery list</title>
+    <link rel="stylesheet" href="grocery-list.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="wrapper">
+            <header class="title">
+                Grocery Bud
+            </header>
+            <div class="input-field">
+                <form id="newItemForm">
+                    <input id="newItemInput" type="text" placeholder="e.g. milk" autocomplete="off">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div id="errorMsg" class="error-msg"></div>
+            <div id="items">
+            </div>
+            <div class="footer">
+                <button id="clearItems" disabled>Clear Items</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./grocery-list.js"></script>
+</body>
+
+</html>
