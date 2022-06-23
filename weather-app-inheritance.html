@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Nitin Jadhav" />
+    <title>Real Time Weather App</title>
+    <link rel="stylesheet" href="./weather-app-inheritance.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="day-forecast">8-day forecast</div>
+      <nav>
+        <ul class="days" id="dates"></ul>
+      </nav>
+      <div>
+        <div>
+          <div class="weather-condition">
+            <div id="weatherIcon"></div>
+            <div id="weatherSituation"></div>
+          </div>
+          <div class="details">
+            <div id="generalDetails"></div>
+            <div id="humidityAndOther"></div>
+          </div>
+          <table>
+            <tr>
+              <th></th>
+              <th>Morning</th>
+              <th>Afternoon</th>
+              <th>Evening</th>
+              <th>Night</th>
+            </tr>
+            <tr>
+              <th>Temperature</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>Feels Like</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+        <div class="sunrise-set">
+          <div class="sun-details">
+            <div class="sun-details-title">Sunrise</div>
+            <div><span></span></div>
+          </div>
+          <div class="sun-details">
+            <div class="sun-details-title">Sunset</div>
+            <div><span></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./weather-app-inheritance.js"></script>
+  </body>
+</html>

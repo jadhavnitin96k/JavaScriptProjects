@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Average Sans", sans-serif, "Koulen", "Lato", sans-serif,
+    "Public Sans", sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  max-height: 63vh;
+  max-width: 500px;
+}
+
+.day-forecast {
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding: 5px 5px 5px 10px;
+}
+
+.days {
+  font-size: 1rem;
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  margin: 12px;
+  padding: 5px 5px 5px 10px;
+  display: flex;
+  overflow-x: auto;
+}
+
+.days::-webkit-scrollbar{
+  display: none;
+}
+
+.days li {
+  list-style-type: none;
+  color: gray;
+  margin: 0 10px;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 8px 0;
+}
+
+.actives {
+  color: rgb(0, 0, 0)!important;
+  font-weight: 600;
+}
+
+.weather-condition {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.weather-situation {
+  font-weight: bold;
+}
+
+.details {
+  margin: 20px;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+}
+
+table th {
+  font-weight: 200;
+}
+
+table tr :first-child,
+.sun-details-title {
+  font-size: 12px;
+  text-align: center;
+}
+
+.sun-details-title {
+  padding-bottom: 10px;
+}
+.sunrise-set {
+  margin: 20px 0 0 20px;
+  display: flex;
+}
+
+.sun-details {
+  margin-right: 20px;
+}
+
+td {
+  cursor: pointer;
+}
